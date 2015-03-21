@@ -4,4 +4,4 @@ COVER:
 http://webservices.bibliotheek.be/index.php?func=cover&ISBN=9780747595823&VLACCnr=8841686&coversize=large
 
 DATA: 
-zoeken.bibliotheek.be/api/v0/search/?q=isbn:978074759582&authorization=ac135e89f84460a251a6283a14180a22
+zoeken.bibliotheek.be/api/v0/search/?q=isbn:9780747595823&authorization=ac135e89f84460a251a6283a14180a22

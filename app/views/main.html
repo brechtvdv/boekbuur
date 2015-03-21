@@ -1,5 +1,23 @@
 <h1>Boeken buur! {{ naam }}</h1>
 
+<section>
+  <form role="form">
+    <div class="form-group">
+      <label>ISBN nummer: </label>
+      <div class="input-group">
+      <input ng-model="isbnWaarde" type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button ng-click="zoek()" class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+    </div>
+  </form>  
+</section>
+
+<div id="resultaatxml" >
+  {{ json }}
+</div>
+
 <Canvas id="videoCanvas" width="320" height="240">
     </Canvas>
     <button id="decode" style="position:absolute;top:225px;left:330px" onclick="Decode()">Start decoding</button>

@@ -1,4 +1,4 @@
-<h1>Boeken buur! {{ naam }}</h1>
+<h1>Boeken buur!</h1>
 
 <section>
   <form role="form">
@@ -11,7 +11,7 @@
       </span>
     </div><!-- /input-group -->
     </div>
-  </form>  
+  </form>
 </section>
 
 <Canvas id="videoCanvas" width="320" height="240">
@@ -52,7 +52,7 @@
             ctx.lineWIdth = "2";
             ctx.strokeStyle="red";
             for(var i = 0; i < localized.length; i++) {
-              ctx.rect(localized[i].x,localized[i].y,localized[i].width,localized[i].height); 
+              ctx.rect(localized[i].x,localized[i].y,localized[i].width,localized[i].height);
             }
             ctx.stroke();
           }
@@ -89,12 +89,12 @@
       } else {
           console.log("getUserMedia not supported");
       }
-      
+
       function Decode() {
         if(!streaming) return;
         JOB.DecodeStream(video);
       }
-      
+
       function StopDecode() {
         JOB.StopStreamDecode();
       }

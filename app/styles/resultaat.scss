@@ -1,3 +1,33 @@
-h1{
-	color: red;
-}
+// body    {background-color: grey;}
+
+// h1    {color: blue; font-size: 50px; font-family:Times New Roman;}
+
+.left-text  {color: white;
+      text-align: center;
+      font-weight: bold;}
+
+.middle-text {color: #337AB7;
+      text-align: center;
+      font-weight: bold;
+      font-size: 25px;}
+
+.right-text {color: white;
+      text-align: center;
+      font-weight: bold;}
+
+.left-img {width: 150px;
+      margin: 1em 3em 3em 0; }
+.middle-img {width: 250px;
+      clear: middle;
+      margin: 1em 40px 3em; }
+.right-img  {width: 150px;
+      margin: 1em 3em 3em 0; }
+
+.tit1   {margin-top: 15px;text-align: center;}
+.tit2   {margin-top: 15px; text-align: center;}
+.tit3   {margin-top: 15px;text-align: center;}
+.aut1,.aut2,.aut3   {text-align: center;}
+
+
+// .col-md-6 {background-color: grey;}
+// .col-md-3 {background-color: grey;}

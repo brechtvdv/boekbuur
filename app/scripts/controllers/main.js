@@ -10,22 +10,14 @@
 
 
 angular.module('boekbuurApp')
-  .controller('MainCtrl', function ($scope, $http) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-
+  .controller('MainCtrl', function ($scope, DataSource) {
+    //This is the callback function
+    var setData = function(data) {
+        $scope.json = data;
+    }
+    var request = { isbn : "bla", 
+					obj : setData }
     $scope.naam = "brecht";
 
-    $scope.zoek = function() {
-    	$http.get("test.xml")
-	    .success(function(response) {
-	    	$scope.xml= response;
-	    	var x2js = new X2JS();
-			var json = x2js.xml_str2json( response );
-			$scope.json = json;
-	    });	    
-    }
+   DataSource.get(request);
   });

@@ -15,9 +15,11 @@ angular.module('boekbuurApp')
     var setData = function(data) {
         $scope.json = data;
     }
-    var request = { isbn : "bla", 
-					obj : setData }
-    $scope.naam = "brecht";
+    
+   $scope.zoek = function() {
+      var request = { isbn : "bla", 
+      callback : setData }
 
-   DataSource.get(request);
-  });
+      DataSource.get(request);
+   };
+});

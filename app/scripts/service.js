@@ -18,6 +18,16 @@ angular.module('boekbuurApp')
                     // to the callback function
                     request.callback(data);
                 })
-           }
+           },
+          parse: function(data){
+            var resultaat = [];
+            var boek = { titel : data.aquabrowser.results.result.titles.title, 
+                        auteur: data.aquabrowser.results.result.authors["main-author"]
+                        };
+            resultaat.push(boek);
+
+            return resultaat;
+          }
        }
+
     }]);

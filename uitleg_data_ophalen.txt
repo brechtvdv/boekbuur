@@ -1,0 +1,7 @@
+API aanspreken: https://docs.google.com/spreadsheets/d/1IMSaNgcQNpE6KC_tgzyCRkXh6yUBF8rn_lyjrd6bUaM/edit#gid=396611154
+
+COVER: 
+http://webservices.bibliotheek.be/index.php?func=cover&ISBN=9780747595823&VLACCnr=8841686&coversize=large
+
+DATA: 
+zoeken.bibliotheek.be/api/v0/search/?q=isbn:978074759582&authorization=ac135e89f84460a251a6283a14180a22

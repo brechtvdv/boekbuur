@@ -11,15 +11,15 @@
 
 angular.module('boekbuurApp')
   .controller('MainCtrl', function ($scope, DataSource) {
-    //This is the callback function
     var setData = function(data) {
         $scope.json = data;
     }
-    
-   $scope.zoek = function() {
-      var request = { isbn : "bla", 
-      callback : setData }
 
+    $scope.zoek = function () {
+      var request = {
+        isbn : $scope.isbnWaarde,
+        callback : setData
+      }
       DataSource.get(request);
-   };
+    };
 });

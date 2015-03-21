@@ -14,14 +14,12 @@ angular.module('boekbuurApp')
                     }
                 ).
                 success(function(data, status) {
-                    // send the converted data back
-                    // to the callback function
-                    request.callback(data);
+                  request.callback(data);
                 })
            },
           parse: function(data){
             var resultaat = [];
-            var boek = { titel : data.aquabrowser.results.result.titles.title, 
+            var boek = { titel : data.aquabrowser.results.result.titles.title,
                         auteur: data.aquabrowser.results.result.authors["main-author"]
                         };
             resultaat.push(boek);
@@ -29,5 +27,4 @@ angular.module('boekbuurApp')
             return resultaat;
           }
        }
-
     }]);

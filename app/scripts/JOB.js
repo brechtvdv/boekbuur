@@ -15,7 +15,7 @@
 JOB = {
 	Config : {
 		// Set to false if the decoder should look for one barcode and then stop. Increases performance.
-		Multiple : true,
+		Multiple : false,
 		
 		// The formats that the decoder will look for.
 		DecodeFormats : ["Code128","Code93","Code39","EAN-13", "2Of5", "Inter2Of5", "Codabar"],

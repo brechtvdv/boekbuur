@@ -67,6 +67,7 @@ body {
   }
 }
 
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
@@ -88,4 +89,20 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.canvas-all {
+  width: 320px;
+}
+.buttons,
+.result {
+  text-align: center;
+}
+
+.result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.searchline {
+  margin-top: 20px;
 }

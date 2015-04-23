@@ -1,23 +1,29 @@
-<h1>Boeken buur!</h1>
+<div class="header">
+  <h1>Boeken buur!</h1>
+</div>
+<div class="container">
   <div class="row">
     <div class="col-md-3">
         <button type="button" class="btn btn-primary">
-          <p class="left-text">Vorige boekbuur</p></button>
+          <h4 class="left-text">Vorige boekbuur</h4></button>
         <p class="tit1">City of flowers</p>
         <p class="aut1">Hoffman, Mary</p>
         <img class="left-img" ng-model="isbn='9780747595717'" ng-src="http://webservices.bibliotheek.be/index.php?func=cover&ISBN={{isbn}}&VLACCnr=8841686&coversize=large"/>
-      </div>
+    </div>
+
     <div class="col-md-6">
-        <p class="middle-text"> Huidig boek</p>
-        <p class="tit2">Harry Potter and the deathly hallows</p>
-        <p class="aut2">Rowling, J.K.</p>
+        <h3 class="middle-text"> Huidig boek</h3>
+        <h5 class="tit2">Harry Potter and the deathly hallows</h5>
+        <h5 class="aut2">Rowling, J.K.</h5>
         <a class = "img1"> <img class="middle-img" ng-model="isbn='9780747595823'" ng-src="http://webservices.bibliotheek.be/index.php?func=cover&ISBN={{isbn}}&VLACCnr=8841686&coversize=large"/> </a>
-      </div>
+    </div>
+
     <div class="col-md-3">
         <button type="button" class="btn btn-primary">
-          <p class="right-text">Volgende boekbuur</p></button>
+          <h4 class="right-text">Volgende boekbuur</h4></button>
         <p class="tit3">The outlander</p>
         <p class="aut3">Adamson, Gil</p>
         <img class="right-img" ng-model="isbn='9780747595922'" ng-src="http://webservices.bibliotheek.be/index.php?func=cover&ISBN={{isbn}}&VLACCnr=8841686&coversize=large"/>
-      </div>
+    </div>
   </div>
+</div>

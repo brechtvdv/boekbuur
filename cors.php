@@ -1,4 +1,4 @@
-sdfsdf<?php
+<?php
 header("Access-Control-Allow-Origin: *");
 
 $isbn = $_GET['isbn'];
